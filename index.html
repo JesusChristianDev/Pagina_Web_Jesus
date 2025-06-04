@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Landing Page</title>
+    <meta name="description"
+        content="Landing profesional de Jesús Christian, desarrollador Frontend en formación. Obtener contactos y ver proyectos.">
+    <meta name="keywords" content="Jesús Christian, desarrollador frontend, landing page, portafolio, proyectos">
+    <meta name="author" content="Jesús Christian">
+    <link rel="icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- NAVBAR SEMÁNTICO -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Jesús Christian</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO / ENCABEZADO -->
+    <header class="hero">
+        <div class="container">
+            <h1>Hola, soy Jesús Christian</h1>
+            <p>Aprendiendo a programar y construyendo proyectos reales.</p>
+            <a href="#contacto" class="btn btn-primary">Contáctame</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SOBRE MÍ -->
+        <section id="sobre-mi" class="sobre-mi">
+            <div class="container flex">
+                <div class="foto-perfil">
+                    <img src="assets/perfil.jpg" width="250" height="250"
+                        alt="Foto de Jesús Christian, desarrollador frontend, sonriendo" loading="lazy"
+                        style="aspect-ratio:1/1;">
+                </div>
+                <div class="texto-sobre">
+                    <h2>Sobre mí</h2>
+                    <p>Aquí iría un texto sobre quién eres, tu historia y tus objetivos como programador.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="proyectos">
+            <div class="container">
+                <h2>Mis proyectos</h2>
+                <div class="grid-proyectos">
+                    <article class="card">
+                        <a href="assets/proyecto1-grande.webp" target="_blank" rel="noopener">
+                            <img src="assets/thumb-proyecto1.webp" width="200" height="200"
+                                alt="Miniatura del Proyecto 1" class="thumb-proyecto" loading="lazy"
+                                style="aspect-ratio:1/1; border-radius:0.5rem;">
+                        </a>
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción breve</p>
+                    </article>
+                    <article class="card">
+                        <a href="assets/proyecto2-grande.webp" target="_blank" rel="noopener">
+                            <img src="assets/thumb-proyecto2.webp" width="200" height="200"
+                                alt="Miniatura del Proyecto 2" class="thumb-proyecto" loading="lazy"
+                                style="aspect-ratio:1/1; border-radius:0.5rem;">
+                        </a>
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción breve</p>
+                    </article>
+                    <!-- Añade más tarjetas según necesites -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Jesús Christian</p>
+            <div class="social-links">
+                <a href="https://github.com/jesuschristian" target="_blank" rel="noopener"
+                    aria-label="GitHub de Jesús Christian">
+                    <img src="assets/github.svg" alt="GitHub" width="28" height="28" style="vertical-align:middle;">
+                </a>
+                <a href="https://instagram.com/jesuschristian" target="_blank" rel="noopener"
+                    aria-label="Instagram de Jesús Christian">
+                    <img src="assets/instagram.svg" alt="Instagram" width="28" height="28"
+                        style="vertical-align:middle;">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>

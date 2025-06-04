@@ -1,0 +1,318 @@
+/* style.css */
+
+/* 1. VARIABLES Y RESET BÁSICO */
+:root {
+    --color-primario: #007bff;
+    --color-secundario: #28a745;
+    --color-fondo: #f2f2f2;
+    --color-texto: #333;
+    --color-texto-claro: #fff;
+    --ancho-max: 1200px;
+    --espaciado: 1rem;
+    --radio-borde: 0.5rem;
+    --fuente-principal: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.5;
+    padding: var(--espaciado);
+}
+
+/* 2. CONTENEDOR CENTRAL */
+.container {
+    width: 100%;
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: 0 var(--espaciado);
+}
+
+/* 3. BOTONES REUTILIZABLES */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--radio-borde);
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    /* 10% más oscuro */
+}
+
+.btn-secondary {
+    background-color: var(--color-secundario);
+    color: var(--color-texto-claro);
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+    /* 10% más oscuro */
+}
+
+/* 4. NAVBAR */
+.navbar {
+    background-color: var(--color-texto);
+    color: var(--color-texto-claro);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--espaciado) 0;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-texto-claro);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    /* se mostrará en pantallas grandes */
+    gap: var(--espaciado);
+}
+
+.nav-links li a {
+    color: var(--color-texto-claro);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radio-borde);
+    transition: background-color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--color-texto-claro);
+    cursor: pointer;
+}
+
+/* 5. HERO (Fondo de imagen corregido) */
+.hero {
+    /* Removimos el background-color negro para que la imagen aparezca */
+    background-image: url('../assets/hero-fondo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 17, 0.4);
+    /* Overlay semitransparente */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.hero p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+/* 6. SECCIÓN SOBRE MÍ */
+.sobre-mi {
+    margin: 2rem 0;
+}
+
+.sobre-mi .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sobre-mi .foto-perfil img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.sobre-mi .texto-sobre h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.sobre-mi .texto-sobre p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* 7. SECCIÓN PROYECTOS */
+.proyectos {
+    margin: 2rem 0;
+}
+
+.proyectos h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    border-radius: var(--radio-borde);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* 8. SECCIÓN CONTACTO */
+.contacto {
+    margin: 2rem 0;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contacto .form-group input,
+.contacto .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radio-borde);
+    font-size: 1rem;
+}
+
+.contacto button {
+    align-self: flex-start;
+}
+
+/* 9. FOOTER */
+.footer {
+    background-color: #111;
+    color: var(--color-texto-claro);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer .social-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* 10. MENÚ RESPONSIVE (clase para mostrar en móvil) */
+.nav-links-visible {
+    display: flex !important;
+    flex-direction: column;
+    gap: var(--espaciado);
+    background-color: var(--color-texto);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
+/* 11. MEDIA QUERIES (Tablet y escritorio) */
+@media (min-width: 768px) {
+
+    /* Mostrar menú horizontal en tablets+ */
+    .nav-links {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .sobre-mi .flex {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sobre-mi .foto-perfil {
+        flex: 1;
+    }
+
+    .sobre-mi .texto-sobre {
+        flex: 2;
+    }
+
+    .grid-proyectos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-proyectos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
