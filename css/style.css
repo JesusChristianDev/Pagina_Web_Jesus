@@ -267,6 +267,15 @@ body {
     justify-content: center;
 }
 
+.footer .social-links a img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.2s;
+}
+
+.footer .social-links a:hover img {
+    filter: brightness(1) invert(0);
+}
+
 /* 10. MENÚ RESPONSIVE (clase para mostrar en móvil) */
 .nav-links-visible {
     display: flex !important;
