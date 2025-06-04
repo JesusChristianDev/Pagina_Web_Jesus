@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Landing Page</title>
+    <title>Jesús Christian – Desarrollador Frontend</title>
     <meta name="description"
-        content="Landing profesional de Jesús Christian, desarrollador Frontend en formación. Obtener contactos y ver proyectos.">
-    <meta name="keywords" content="Jesús Christian, desarrollador frontend, landing page, portafolio, proyectos">
+        content="Jesús Christian, desarrollador Frontend en formación. Portafolio de proyectos, habilidades y contacto para oportunidades remotas.">
+    <meta name="keywords" content="Jesús Christian, desarrollador frontend, portafolio, proyectos, React, JavaScript">
     <meta name="author" content="Jesús Christian">
     <link rel="icon" href="/favicon.ico">
 
@@ -15,11 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
     <!-- NAVBAR SEMÁNTICO -->
+    <!-- Barra de navegación principal con enlaces a las secciones -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">Jesús Christian</a>
@@ -35,62 +35,116 @@
     </nav>
 
     <!-- SECCIÓN HERO / ENCABEZADO -->
+    <!-- Presentación principal y llamada a la acción -->
     <header class="hero">
         <div class="container">
             <h1>Hola, soy Jesús Christian</h1>
-            <p>Aprendiendo a programar y construyendo proyectos reales.</p>
+            <p>Soy un desarrollador Frontend apasionado por crear interfaces intuitivas y experiencias de usuario
+                fluidas.</p>
             <a href="#contacto" class="btn btn-primary">Contáctame</a>
         </div>
     </header>
 
     <main>
         <!-- SOBRE MÍ -->
+        <!-- Sección de presentación personal y experiencia -->
         <section id="sobre-mi" class="sobre-mi">
             <div class="container flex">
                 <div class="foto-perfil">
+                    <!-- Foto de perfil optimizada -->
                     <img src="assets/perfil.jpg" width="250" height="250"
-                        alt="Foto de Jesús Christian, desarrollador frontend, sonriendo" loading="lazy"
+                        alt="Jesús Christian, desarrollador frontend, sonriendo" loading="lazy"
                         style="aspect-ratio:1/1;">
                 </div>
                 <div class="texto-sobre">
                     <h2>Sobre mí</h2>
-                    <p>Aquí iría un texto sobre quién eres, tu historia y tus objetivos como programador.</p>
+                    <p>Soy un profesional con base en hostelería que decidió reinventarse en el mundo del desarrollo
+                        web. Tras 8 años de experiencia
+                        atendiendo clientes y optimizando procesos en restaurantes, encontré mi verdadera vocación en la
+                        programación. Actualmente
+                        me especializo en <strong>HTML5</strong>, <strong>CSS3 (Tailwind)</strong> y
+                        <strong>JavaScript</strong>, con experiencia básica en <strong>React</strong> y
+                        <strong>Next.js</strong>. Mi objetivo es crear aplicaciones que no solo funcionen correctamente,
+                        sino que también ofrezcan un diseño
+                        limpio, accesible y responsive.
+                    </p>
+                    <p>En mi tiempo libre, me mantengo actualizado con las últimas tendencias de la industria, participo
+                        en desafíos de
+                        programación y comparto conocimientos en mi blog personal. Busco oportunidades remotas que me
+                        permitan colaborar
+                        con equipos de todo el mundo y seguir creciendo profesionalmente.</p>
                 </div>
             </div>
         </section>
 
         <!-- PROYECTOS -->
+        <!-- Galería de proyectos destacados con miniaturas y descripciones -->
         <section id="proyectos" class="proyectos">
             <div class="container">
                 <h2>Mis proyectos</h2>
                 <div class="grid-proyectos">
+                    <!-- Proyecto 1 -->
                     <article class="card">
                         <a href="assets/proyecto1-grande.webp" target="_blank" rel="noopener">
                             <img src="assets/thumb-proyecto1.webp" width="200" height="200"
-                                alt="Miniatura del Proyecto 1" class="thumb-proyecto" loading="lazy"
-                                style="aspect-ratio:1/1; border-radius:0.5rem;">
+                                alt="Miniatura de Gestor de Reservas para Restaurantes" class="thumb-proyecto"
+                                loading="lazy" style="aspect-ratio:1/1; border-radius:0.5rem;">
                         </a>
-                        <h3>Proyecto 1</h3>
-                        <p>Descripción breve</p>
+                        <h3>Gestor de Reservas para Restaurantes</h3>
+                        <p>Aplicación web para gestionar reservas y disponibilidad en tiempo real. Desarrollada con
+                            Next.js y Tailwind, incluye:
+                        <ul>
+                            <li>Interfaz intuitiva para ver y modificar reservas.</li>
+                            <li>Autenticación de usuarios con sesiones seguras.</li>
+                            <li>Notificaciones automáticas por email al confirmar o cancelar reservas.</li>
+                        </ul>
+                        </p>
                     </article>
+                    <!-- Proyecto 2 -->
                     <article class="card">
                         <a href="assets/proyecto2-grande.webp" target="_blank" rel="noopener">
                             <img src="assets/thumb-proyecto2.webp" width="200" height="200"
-                                alt="Miniatura del Proyecto 2" class="thumb-proyecto" loading="lazy"
+                                alt="Miniatura de Dashboard de Análisis de Ventas" class="thumb-proyecto" loading="lazy"
                                 style="aspect-ratio:1/1; border-radius:0.5rem;">
                         </a>
-                        <h3>Proyecto 2</h3>
-                        <p>Descripción breve</p>
+                        <h3>Dashboard de Análisis de Ventas</h3>
+                        <p>Panel interactivo construido con React y Chart.js que muestra métricas de rendimiento para
+                            pequeños negocios. Características:
+                        <ul>
+                            <li>Gráficos de barras y líneas que detallan ventas diarias y mensuales.</li>
+                            <li>Filtros dinámicos para rangos de fechas y categorías de productos.</li>
+                            <li>Integración con una API simulada para cargar datos de ventas en tiempo real.</li>
+                        </ul>
+                        </p>
                     </article>
-                    <!-- Añade más tarjetas según necesites -->
+                    <!-- Proyecto 3 -->
+                    <article class="card">
+                        <a href="assets/proyecto3-grande.webp" target="_blank" rel="noopener">
+                            <img src="assets/thumb-proyecto3.webp" width="200" height="200"
+                                alt="Miniatura de App de Tareas Personalizadas" class="thumb-proyecto" loading="lazy"
+                                style="aspect-ratio:1/1; border-radius:0.5rem;">
+                        </a>
+                        <h3>App de Tareas Personalizadas</h3>
+                        <p>SPA creada con React y localStorage que permite:
+                        <ul>
+                            <li>Crear, editar y eliminar tareas con fechas de vencimiento.</li>
+                            <li>Etiquetado y prioridad para organización eficiente.</li>
+                            <li>Modo oscuro opcional y diseño 100% responsive.</li>
+                        </ul>
+                        </p>
+                    </article>
                 </div>
             </div>
         </section>
 
         <!-- CONTACTO -->
+        <!-- Formulario de contacto accesible para oportunidades y consultas -->
         <section id="contacto" class="contacto">
             <div class="container">
                 <h2>Contacto</h2>
+                <p>¿Tienes un proyecto en mente o buscas un desarrollador para tu equipo? Completa el formulario y me
+                    pondré en contacto contigo a la
+                    brevedad. Estoy disponible para oportunidades freelance y trabajo remoto.</p>
                 <form>
                     <div class="form-group">
                         <label for="nombre">Nombre</label>
@@ -102,7 +156,8 @@
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Tu mensaje..." required></textarea>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..."
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-secondary">Enviar</button>
                 </form>
@@ -110,14 +165,23 @@
         </section>
     </main>
 
+    <!-- FOOTER -->
+    <!-- Pie de página con derechos y enlaces sociales -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Jesús Christian</p>
+            <p>&copy; 2025 Jesús Christian. Todos los derechos reservados.</p>
             <div class="social-links">
+                <!-- Enlace a GitHub -->
                 <a href="https://github.com/jesuschristian" target="_blank" rel="noopener"
                     aria-label="GitHub de Jesús Christian">
                     <img src="assets/github.svg" alt="GitHub" width="28" height="28" style="vertical-align:middle;">
                 </a>
+                <!-- Enlace a LinkedIn -->
+                <a href="https://www.linkedin.com/in/jesuschristian" target="_blank" rel="noopener"
+                    aria-label="LinkedIn de Jesús Christian">
+                    <img src="assets/linkedin.svg" alt="LinkedIn" width="28" height="28" style="vertical-align:middle;">
+                </a>
+                <!-- Enlace a Instagram -->
                 <a href="https://instagram.com/jesuschristian" target="_blank" rel="noopener"
                     aria-label="Instagram de Jesús Christian">
                     <img src="assets/instagram.svg" alt="Instagram" width="28" height="28"
@@ -126,8 +190,8 @@
             </div>
         </div>
     </footer>
+    <!-- Script principal para interactividad del menú -->
     <script src="js/script.js"></script>
 </body>
-
 
 </html>

@@ -1,6 +1,7 @@
 /* style.css */
 
 /* 1. VARIABLES Y RESET BÁSICO */
+/* Defino variables de color, tipografía y reseteo márgenes/paddings */
 :root {
     --color-primario: #007bff;
     --color-secundario: #28a745;
@@ -32,6 +33,7 @@ body {
 }
 
 /* 2. CONTENEDOR CENTRAL */
+/* Limita el ancho y centra el contenido */
 .container {
     width: 100%;
     max-width: var(--ancho-max);
@@ -40,6 +42,7 @@ body {
 }
 
 /* 3. BOTONES REUTILIZABLES */
+/* Estilos base para botones principales y secundarios */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -72,6 +75,7 @@ body {
 }
 
 /* 4. NAVBAR */
+/* Barra de navegación superior fija */
 .navbar {
     background-color: var(--color-texto);
     color: var(--color-texto-claro);
@@ -122,6 +126,7 @@ body {
 }
 
 /* 5. HERO (Fondo de imagen corregido) */
+/* Sección principal con fondo destacado y presentación */
 .hero {
     /* Removimos el background-color negro para que la imagen aparezca */
     background-image: url('../assets/hero-fondo.jpg');
@@ -130,7 +135,7 @@ body {
     background-repeat: no-repeat;
     color: var(--color-texto-claro);
     text-align: center;
-    padding: 4rem 0;
+    padding: 6rem 0 5rem 0;
     position: relative;
 }
 
@@ -165,14 +170,15 @@ body {
 }
 
 /* 6. SECCIÓN SOBRE MÍ */
+/* Presentación personal y foto */
 .sobre-mi {
-    margin: 2rem 0;
+    margin: 3rem 0 3.5rem 0;
 }
 
 .sobre-mi .flex {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .sobre-mi .foto-perfil img {
@@ -194,8 +200,9 @@ body {
 }
 
 /* 7. SECCIÓN PROYECTOS */
+/* Galería de proyectos destacados */
 .proyectos {
-    margin: 2rem 0;
+    margin: 3rem 0 3.5rem 0;
 }
 
 .proyectos h2 {
@@ -207,14 +214,14 @@ body {
 .grid-proyectos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
 .card {
     background: white;
     border-radius: var(--radio-borde);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    padding: 2rem 1.5rem;
 }
 
 .card h3 {
@@ -222,8 +229,9 @@ body {
 }
 
 /* 8. SECCIÓN CONTACTO */
+/* Formulario de contacto accesible */
 .contacto {
-    margin: 2rem 0;
+    margin: 3rem 0 3.5rem 0;
 }
 
 .contacto h2 {
@@ -235,7 +243,8 @@ body {
 .contacto form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .contacto .form-group input,
@@ -252,18 +261,19 @@ body {
 }
 
 /* 9. FOOTER */
+/* Pie de página con derechos y redes sociales */
 .footer {
     background-color: #111;
     color: var(--color-texto-claro);
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
+    padding: 2.5rem 0 2rem 0;
+    margin-top: 3.5rem;
 }
 
 .footer .social-links {
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: center;
 }
 
@@ -277,6 +287,7 @@ body {
 }
 
 /* 10. MENÚ RESPONSIVE (clase para mostrar en móvil) */
+/* Muestra el menú en móviles al hacer click en el botón */
 .nav-links-visible {
     display: flex !important;
     flex-direction: column;
@@ -291,9 +302,8 @@ body {
 }
 
 /* 11. MEDIA QUERIES (Tablet y escritorio) */
+/* Ajustes de layout para pantallas grandes */
 @media (min-width: 768px) {
-
-    /* Mostrar menú horizontal en tablets+ */
     .nav-links {
         display: flex;
     }
